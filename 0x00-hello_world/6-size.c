@@ -18,11 +18,11 @@ int main(void)
 
 	/*the sizeof operator is used to evaluate the size of the variable*/
 
-	printf("Size of a char: %1d bytes\n", sizeof(charType));
-	printf("Size of an int: %1d bytes\n", sizeof(intType));
-	printf("Size of a long int: %1d bytes\n", sizeof(longintType));
-	printf("Size of a long long int: %1d bytes\n", sizeof(longlongintType));
-	printf("Size of a float: %1d bytes\n", sizeof(floatType));
+	printf("Size of a char: %1d byte(s)\n", sizeof(charType));
+	printf("Size of an int: %1d byte(s)\n", sizeof(intType));
+	printf("Size of a long int: %1d byte(s)\n", sizeof(longintType));
+	printf("Size of a long long int: %1d byte(s)\n", sizeof(longlongintType));
+	printf("Size of a float: %1d byte(s)\n", sizeof(floatType));
 
 	return (0);
 
