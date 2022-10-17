@@ -7,20 +7,22 @@
 
 int main(void)
 {
-	int integerType;
-
-	float floatType;
-
-	double doubleType;
-
 	char charType;
+
+	int intType;
+
+	long int longintType;
+
+	long long int longlongintType;
+	float floatType;
 
 	/*the sizeof operator is used to evaluate the size of the variable*/
 
-	printf("The size of int: %1d bytes\n", sizeof(integerType));
-	printf("The size of float: %1d bytes\n", sizeof(floatType));
-	printf("The size of double: %1d bytes\n", sizeof(doubleType));
-	printf("The size of char: %1d bytes\n", sizeof(doubleType));
+	printf("Size of a char: %1d bytes\n", sizeof(charType));
+	printf("Size of an int: %1d bytes\n", sizeof(intType));
+	printf("Size of a long int: %1d bytes\n", sizeof(longintType));
+	printf("Size of a long long int: %1d bytes\n", sizeof(longlongintType));
+	printf("Size of a float: %1d bytes\n", sizeof(floatType));
 
 	return (0);
 
