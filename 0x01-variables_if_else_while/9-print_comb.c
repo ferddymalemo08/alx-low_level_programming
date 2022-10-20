@@ -11,7 +11,7 @@ int main(void)
 {
 	int a;
 
-	for (a = 0; a > 100; a++)
+	for (a = 0; a < 100; a++)
 	{
 		putchar(a + 'a');
 		if (a < 99)
