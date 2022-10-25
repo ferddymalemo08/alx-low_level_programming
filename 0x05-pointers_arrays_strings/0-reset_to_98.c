@@ -8,14 +8,7 @@
  * Return: Always 0 (success)
  */
 
-void set_to_98(int *n)
+void reset_to_98(int *n)
 {
-	int var;
-
-	var = 98;
-	n = &var;
-
-	printf("value of 'var': %d\n", var);
-	printf("address of 'var': %p\n", &var);
-	printf("value of n: %p\n ", n);
+	*n = 98;
 }
