@@ -3,6 +3,7 @@
 /**
  * print_chessboard - Prints a chessboard.
  * @a: The chessboard to be printed.
+ *
  */
 
 void print_chessboard(char (*a)[8])
@@ -12,11 +13,8 @@ void print_chessboard(char (*a)[8])
 	for (indx1 = 0; a[indx1][7]; indx1++)
 	{
 		for (indx2 = 0; indx2 < 8; indx2++)
-		{
 			_putchar(a[indx1][indx2]);
 
-		}
+		_putchar('\n');
 	}
-
-	_putchar('\0');
 }
