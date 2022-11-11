@@ -1,8 +1,8 @@
-#0x09-static_libraries
+# 0x09-static_libraries
 ---
-##Learning Objectives:
+## Learning Objectives:
 ---
-###At the end of this project:
+### At the end of this project:
 - I am expected to be able to explain what is a static library, how does it work, how to create one, and how to use it
 - The Basic usage of ar, ranlib, nm
 
