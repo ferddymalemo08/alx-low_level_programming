@@ -1,6 +1,6 @@
-#alx-low_level_programming
+# alx-low_level_programming
 ---
-##Objective is Learn C as Low level programming
+## Objective is Learn C as Low level programming
 ---
 0x00-hello_world
 0x01-variables_if_else_while
