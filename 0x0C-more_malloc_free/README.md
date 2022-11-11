@@ -1,9 +1,8 @@
-# 0x0C. C - More malloc, free
+# 0x0C-more_malloc_free
 ---
-## Concept: Automatic and dynamic allocation, malloc and free
+## In this project:
+- I am Expected to understatnd how  Automatic and dynamic allocation, malloc and free are used
 ---
-### Learning Objectives:
+### Objectives:
 - How to use the exit function
-- What are the functions calloc and realloc from the standard library and how to use them
----
-
+- What are the functions calloc and realloc from the standard library and how to use them 
