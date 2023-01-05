@@ -1,73 +1,40 @@
 #include "main.h"
 
-
 /**
+ * _atoi - Find and print the first number in a string as in int
+ * @s: string to convert to int
  *
- * _atoi - converts a string to an integer
- *
- * @s: string to be converted
- *
- *
- *
- * Return: the int converted from the string
- *
+ * Return: the integer
  */
-
 int _atoi(char *s)
 {
+	int k, l, j;
 
-	int i, d, n, len, f, digit;
+	k = l = j = 0;
 
-
-	i = 0;
-	d = 0;
-	n = 0;
-	len = 0;
-	f = 0;
-	digit = 0;
-
-	while (s[len] != '\0')
-		len++;
-
-	while (i < len && f == 0)
+	while (*(s + k) != '\0')
 	{
+		if (*(s + k) == '-')
+		j++;
 
-		if (s[i] == '-')
-
-			++d;
-
-		if (s[i] >= '0' && s[i] <= '9')
+		if (*(s + k) >= '0' && *(s + k) <= '9')
 		{
-			digit = s[i] - '0';
-
-			if (d % 2)
-
-																																digit = -digit;
-
-																														n = n * 10 + digit;
-
-																																	f = 1;
-
-																																				if (s[i + 1] < '0' || s[i + 1] > '9')
-
-																																									break;
-
-																																							f = 0;
-
-																																									}
-
-																			i++;
-
-																				}
-
-
-
-											if (f == 0)
-
-														return (0);
-
-
-
-												return (n);
-
+			while (*(s + k) >= '0' && *(s + k) <= '9')
+			{
+				if (l == 0)
+				{
+					l = (l * 10) + (*(s + k) - '0');
+					l *= -1;
+				}
+				else
+					l = (l * 10) - (*(s + k) - '0');
+			k++;
+			}
+			if (j % 2 == 0)
+				l *= -1;
+			return (l);
+		}
+		k++;
+	}
+	return (0);
 }
